@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro Aluno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="JavaScript" src="sistema.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilizacao.css">
+    </head>
+    <body>
+        
+        <form  method="get" >
+            <label>Nome: </label>  <input type="text"  name="nome" id="nome" value="">
+            <br>
+            <label>Telefone: </label> <input type="text"  name="telefone" id="telefone" value="">
+            <br>
+            <label>Data de Nascimento: </label> <input type="date"  name="dnascimento" id="dnascimento" value="">
+            <br>
+            <label>Nota Final: </label> <input type="number" min="0" max="10"  name="nota_final" id="nota_final" value="">
+            <br>
+            <input type="button" name="Salvar" value="Salvar" onclick="inserirAluno()" >            
+        </form>
+        <label id="aluno"></label>
+        
+    </body>
+</html>
